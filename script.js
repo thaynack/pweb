@@ -1,9 +1,4 @@
 // ========================================
-// HELLO KITTY STORE - JAVASCRIPT
-// 6 Scripts: 3 Funções + 3 Efeitos Visuais
-// ========================================
-
-// ========================================
 // SCRIPT 1: CURSOR CUSTOMIZADO (EFEITO VISUAL)
 // ========================================
 const customCursor = document.getElementById('custom-cursor');
