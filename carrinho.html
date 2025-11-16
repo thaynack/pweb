@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" href="imagens/icone.jpg" type="image/jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Hello Kitty Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="custom-cursor"></div>
+    
+    <!-- Menu de Navegação -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>🎀 Hello Kitty Store</h1>
+        </div>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="favoritos.html">Favoritos ❤️</a></li>
+            <li><a href="carrinho.html" class="active">Carrinho 🛒</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <!-- Cabeçalho da Página -->
+    <section class="page-header">
+        <h1>🛒 Meu Carrinho</h1>
+        <p>Finalize sua compra</p>
+    </section>
+
+    <!-- Carrinho de Compras -->
+    <section class="carrinho-section">
+        <div class="carrinho-container">
+            <div class="carrinho-itens" id="carrinhoItens">
+                <div class="empty-state" id="emptyCarrinho">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 24 24' fill='%23FFB3DE'%3E%3Cpath d='M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z'/%3E%3C/svg%3E" alt="Carrinho">
+                    <h3>Seu carrinho está vazio</h3>
+                    <p>Adicione produtos para continuar comprando</p>
+                    <a href="produtos.html" class="btn-primary">Ver Produtos</a>
+                </div>
+                <!-- Itens do carrinho carregados via JavaScript -->
+            </div>
+            
+            <div class="carrinho-resumo" id="carrinhoResumo">
+                <h3>Resumo do Pedido</h3>
+                <div class="resumo-linha">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">R$ 0,00</span>
+                </div>
+                <div class="resumo-linha">
+                    <span>Frete:</span>
+                    <span id="frete">R$ 0,00</span>
+                </div>
+                <div class="resumo-linha total">
+                    <span>Total:</span>
+                    <span id="total">R$ 0,00</span>
+                </div>
+                <button class="btn-finalizar" id="btnFinalizar">Finalizar Compra</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Hello Kitty Store. Todos os direitos reservados. 🎀</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

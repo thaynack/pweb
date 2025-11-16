@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="icon" href="imagens/icone.jpg" type="image/jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Kitty Store - Loja Oficial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cursor customizado Hello Kitty -->
+    <div id="custom-cursor"></div>
+
+    <!-- Menu de Navegação -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>🎀 Hello Kitty Store</h1>
+        </div>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="active">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="favoritos.html">Favoritos ❤️</a></li>
+            <li><a href="carrinho.html">Carrinho 🛒</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner Principal com Vídeo -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h2 class="animated-title">Bem-vinda(o) ao Mundo Hello Kitty! ✨</h2>
+            <p>Descubra produtos fofos e encantadores</p>
+            <div class="video-container">
+                <video id="heroVideo" autoplay muted loop poster="placeholder-video.jpg">
+                    <source src="imagens/generated-video.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos em Destaque -->
+    <section class="produtos-destaque">
+        <h2 class="section-title">💖 Produtos em Destaque</h2>
+        <div class="produtos-grid" id="produtosGrid">
+            <!-- Produtos serão carregados dinamicamente via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h3>📧 Receba Novidades!</h3>
+            <p>Cadastre-se e ganhe 10% de desconto na primeira compra</p>
+            <form id="newsletterForm">
+                <input type="email" placeholder="Seu melhor e-mail" required>
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Hello Kitty Store. Todos os direitos reservados. 🎀</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

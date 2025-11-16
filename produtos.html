@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" href="imagens/icone.jpg" type="image/jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Hello Kitty Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="custom-cursor"></div>
+    
+    <!-- Menu de Navegação -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>🎀 Hello Kitty Store</h1>
+        </div>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html" class="active">Produtos</a></li>
+            <li><a href="favoritos.html">Favoritos ❤️</a></li>
+            <li><a href="carrinho.html">Carrinho 🛒</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <!-- Cabeçalho da Página -->
+    <section class="page-header">
+        <h1>🛍️ Nossos Produtos</h1>
+        <p>Explore nossa coleção encantadora</p>
+    </section>
+
+    <!-- Filtros de Produtos -->
+    <section class="filtros-section">
+        <div class="filtros-container">
+            <button class="filtro-btn active" data-categoria="todos">Todos</button>
+            <button class="filtro-btn" data-categoria="acessorios">Acessórios</button>
+            <button class="filtro-btn" data-categoria="pelúcias">Pelúcias</button>
+            <button class="filtro-btn" data-categoria="papelaria">Papelaria</button>
+            <button class="filtro-btn" data-categoria="decoracao">Decoração</button>
+        </div>
+    </section>
+
+    <!-- Grade de Produtos -->
+    <section class="produtos-page">
+        <div class="produtos-grid-full" id="produtosGridFull">
+            <!-- Produtos carregados via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Hello Kitty Store. Todos os direitos reservados. 🎀</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
